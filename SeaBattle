@@ -314,6 +314,8 @@ int main()
         cin >> x1 >> y1;
 
         add_ship(x, y-1, x1, y1-1, player[1].pole, player[1].ship);
+
+        write(1, "\E[H\E[2J", 7);
     }
 
     while((ship_check(player[0].pole) && ship_check(player[1].pole))){
