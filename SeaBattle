@@ -114,7 +114,7 @@ int add_ship(char x, int y, char x1, int y1, char ( *ar )[game_size], short (*sh
         return 1;
     }
 
-    if((abs((x_new) - (x1_new)) + 1 > 4) || (abs(y - y1) > 4)){
+    if((abs((x_new) - (x1_new)) + 1 > 4) || (abs(y - y1) + 1 > 4)){
         cout << "Неверно введенные координаты" << endl;
         return 1;
     }
